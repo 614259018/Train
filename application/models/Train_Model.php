@@ -21,6 +21,7 @@ class Train_Model extends CI_Model {
         $this->db->join('starting_point', 'starting_point.st_id = train.st_id', 'left');
         $this->db->join('huay_rach', 'huay_rach.st_id = train.st_id', 'left');
         $this->db->join('end_point', 'end_point.st_id = train.st_id', 'left');
+        $this->db->where('h_time_to <', "06.00" );
         
         $query = $this->db->get();
         return $query->result();
