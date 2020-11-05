@@ -46,7 +46,8 @@ class Train extends CI_Controller {
             $this->TM->insert_starting_point($result1);
             $this->TM->insert_huay_rach($result2);
             $this->TM->insert_end_point($result3);
-            $this->load->view('view_insert_successwithmenulink');
+            $result['TM'] = $this->TM->view_table();
+            $this->load->view('index',$result);
 
         }else {
             echo "ไม่สามารถเพิ่มข้อมูลได้ค่ะ !";
