@@ -5,8 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <meta charset="utf-8">
     <title>Index | Train</title>
-    <link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>css/styles.css">
+  
     <!--using FontAwesome-->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
