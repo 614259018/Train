@@ -32,8 +32,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <?php
             foreach($TM as $row){
         ?>
-        <tr>
-            <td class="input id" colspan = "1"><?=$row->st_id;?></td>
+        <tr class="trinput">
+            <td class="input" colspan = "1"><?=$row->st_id;?></td>
             <td class="input" colspan = "1"><?=$row->s_station;?></td>
             <td class="input" colspan = "1"><?=$row->s_start_time;?></td>
             <td class="input" colspan = "1"><?=$row->h_time_to;?></td>
@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         ?>
     </table>
     <br><br>
-    <a class="button" href="../Train/add_data">เพิ่ม</a>
+    <a class="button" href="../Train/add_data">เพิ่มตารางการเดินทาง</a>
 </center>
 </body>
 </html>
